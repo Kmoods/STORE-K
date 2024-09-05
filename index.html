@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="Title">🛒 STORE</h1>
+        
+        <div class="product-list">
+            <!-- Produtos -->
+            <div class="product">
+                <h2>Bot Básico</h2>
+                <p>Preço: R$2</p>
+                <button class="btn" onclick="addToCart(1)">
+                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product">
+                <h2>Bot Intermediário</h2>
+                <p>Preço: R$5</p>
+                <button class="btn" onclick="addToCart(2)">
+                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product">
+                <h2>Bot Avançado</h2>
+                <p>Preço: R$9</p>
+                <button class="btn" onclick="addToCart(3)">
+                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product">
+                <h2>API</h2>
+                <p>Preço: R$15</p>
+                <p>NÃO E PRECISO COMPRA MAIS DE 1</p>
+                <button class="btn" onclick="addToCart(4)">
+                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: R$0</p>
+        
+        <div class="checkout">
+            <input type="text" id="user-name" placeholder="Seu nome">
+            <input type="email" id="user-email" placeholder="Seu e-mail">
+            <select id="payment-method">
+                <option value="PIX">PIX</option>
+            </select>
+            <input type="text" id="pix-name" placeholder="Nome no PIX">
+            <button class="btn confirm" onclick="confirmPurchase()">
+                <i class="fas fa-check"></i> Confirmar Compra
+            </button>
+        </div>
+        <br><br>
+        <p class="copy">&copy; 2024 Kmoods. Todos os direitos reservados. É proibida a reprodução não autorizada deste site/app.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
